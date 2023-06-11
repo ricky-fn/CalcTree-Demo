@@ -8,9 +8,11 @@
   --layer3-item-gap: calc(360deg / 8);
   --layer3-item-gap-reverse: calc(-360deg / 8);
   --layer3-container-size: 650px;
+  --layer3-z-index: 1;
   --layer2-item-gap: calc(360deg / 7);
   --layer2-item-gap-reverse: calc(-360deg / 7);
   --layer2-shift: 36deg;
+  --layer2-z-index: 5;
   --layer2-container-size: 500px;
   --layer1-item-gap: calc(360deg / 5);
   --layer1-item-gap-reverse: calc(-360deg / 5);

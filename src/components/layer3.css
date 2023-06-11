@@ -20,6 +20,7 @@
   animation-fill-mode: forwards;
   transform: scale(0);
   animation-delay: calc(var(--zoom-duration) * 2);
+  z-index: var(--layer3-z-index);
 }
 
 @keyframes layer3RotateAnimation {
