@@ -1,8 +1,6 @@
 .layer-1-container {
-  width: 360px;
-  height: 360px;
-  max-height: 340px;
-  max-width: 340px;
+  width: var(--layer1-container-size);
+  height: var(--layer1-container-size);
   background-color: #0c111b;
   border-radius: 100%;
   justify-content: center;
@@ -38,7 +36,7 @@
   align-items: center;
   display: block;
   position: absolute;
-  animation: layer1RotateAnimation 30s linear infinite;
+  animation: layer1RotateAnimation var(--animation-duration) linear infinite;
 }
 
 .layer-1-container .avatar {
@@ -56,10 +54,10 @@
 
 @keyframes avatar1RotateAnimation {
   0% {
-    transform: rotate(288deg);
+    transform: rotate(calc(360deg - var(--layer1-item-gap)));
   }
   100% {
-    transform: rotate(-72deg);
+    transform: rotate(var(--layer1-item-gap-reverse));
   }
 }
 
@@ -68,16 +66,15 @@
 }
 
 .layer-1-container .avatar-1 img {
-  transform: rotate(-72deg);
-  animation: avatar1RotateAnimation 30s linear infinite;
+  animation: avatar1RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes avatar2RotateAnimation {
   0% {
-    transform: rotate(216deg);
+    transform: rotate(calc(360deg - calc(var(--layer1-item-gap) * 2)));
   }
   100% {
-    transform: rotate(-144deg);
+    transform: rotate(calc(var(--layer1-item-gap-reverse) * 2));
   }
 }
 
@@ -86,16 +83,15 @@
 }
 
 .layer-1-container .avatar-2 img {
-  transform: rotate(-144deg); 
-  animation: avatar2RotateAnimation 30s linear infinite;
+  animation: avatar2RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes avatar3RotateAnimation {
   0% {
-    transform: rotate(144deg);
+    transform: rotate(calc(360deg - calc(var(--layer1-item-gap) * 3)));
   }
   100% {
-    transform: rotate(-216deg);
+    transform: rotate(calc(var(--layer1-item-gap-reverse) * 3));
   }
 }
 
@@ -105,15 +101,15 @@
 
 .layer-1-container .avatar-3 img {
   transform: rotate(-216deg); 
-  animation: avatar3RotateAnimation 30s linear infinite;
+  animation: avatar3RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes avatar4RotateAnimation {
   0% {
-    transform: rotate(72deg);
+    transform: rotate(calc(360deg - calc(var(--layer1-item-gap) * 4)));
   }
   100% {
-    transform: rotate(-288deg);
+    transform: rotate(calc(var(--layer1-item-gap-reverse) * 4));
   }
 }
 
@@ -123,16 +119,16 @@
 
 .layer-1-container .avatar-4 img {
   transform: rotate(-288deg); 
-  animation: avatar4RotateAnimation 30s linear infinite;
+  animation: avatar4RotateAnimation var(--animation-duration) linear infinite;
 }
 
 
 @keyframes avatar5RotateAnimation {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(calc(360deg - calc(var(--layer1-item-gap) * 5)));
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(calc(var(--layer1-item-gap-reverse) * 5));
   }
 }
 
@@ -141,7 +137,7 @@
 }
 
 .layer-1-container .avatar-5 img {
-  animation: avatar5RotateAnimation 30s linear infinite;
+  animation: avatar5RotateAnimation var(--animation-duration) linear infinite;
 }
 
 .layer-1-container .logo {
@@ -153,5 +149,5 @@
   bottom: 0%;
   left: 0%;
   right: 0%;
-  animation: avatar5RotateAnimation 30s linear infinite;
+  animation: avatar5RotateAnimation var(--animation-duration) linear infinite;
 }

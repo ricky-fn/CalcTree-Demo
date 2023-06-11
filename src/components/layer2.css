@@ -9,23 +9,22 @@
 }
 
 .layer-2-container {
-  width: 500px;
-  height: 500px;
-  max-width: 500px;
+  width: var(--layer2-container-size);
+  height: var(--layer2-container-size);
   opacity: 1;
   background: url(/src/assets/layer2/path.svg) 50%;
   background-size: cover;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -250px;
-  margin-top: -250px;
-  animation: layer2RotateAnimation 30s linear infinite;
+  margin-left: calc(0px - var(--layer2-container-size) / 2);
+  margin-top: calc(0px - var(--layer2-container-size) / 2);
+  animation: layer2RotateAnimation var(--animation-duration) linear infinite;
 }
 
 .layer-2-container .tool {
   width: 44px;
-  height: calc(500px / 2 + 15px);
+  height: calc(var(--layer2-container-size) / 2 + 15px);
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0%;
   display: block;
@@ -38,126 +37,119 @@
 
 @keyframes tool1RotateAnimation {
   0% {
-    transform: rotate(294deg);
+    transform: rotate(calc(360deg - var(--layer2-item-gap) + 36deg));
   }
   100% {
-    transform: rotate(-66deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) + 36deg));
   }
 }
 
 .layer-2-container .tool-1 {
-  transform: rotate(66deg);
+  transform: rotate(calc(var(--layer2-item-gap) - 36deg));
 }
 
 .layer-2-container .tool-1 img {
-  transform: rotate(-66deg);
-  animation: tool1RotateAnimation 30s linear infinite;
+  animation: tool1RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes tool2RotateAnimation {
   0% {
-    transform: rotate(242deg);
+    transform: rotate(calc(360deg - calc(var(--layer2-item-gap) * 2) + 38deg));
   }
   100% {
-    transform: rotate(-118deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) * 2 + 38deg));
   }
 }
 
 .layer-2-container .tool-2 {
-  transform: rotate(118deg);
+  transform: rotate(calc(var(--layer2-item-gap) * 2 - 38deg));
 }
 
 .layer-2-container .tool-2 img {
-  transform: rotate(-118deg);
-  animation: tool2RotateAnimation 30s linear infinite;
+  animation: tool2RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes tool3RotateAnimation {
   0% {
-    transform: rotate(194deg);
+    transform: rotate(calc(360deg - calc(var(--layer2-item-gap) * 3) + 36deg));
   }
   100% {
-    transform: rotate(-166deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) * 3 + 36deg));
   }
 }
 
 .layer-2-container .tool-3 {
-  transform: rotate(166deg);
+  transform: rotate(calc(var(--layer2-item-gap) * 3 - 36deg));
 }
 
 .layer-2-container .tool-3 img {
-  transform: rotate(-166deg);
-  animation: tool3RotateAnimation 30s linear infinite;
+  animation: tool3RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes tool4RotateAnimation {
   0% {
-    transform: rotate(141deg);
+    transform: rotate(calc(360deg + 20deg - calc(var(--layer2-item-gap) * 4)));
   }
   100% {
-    transform: rotate(-219deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) * 4) + 20deg);
   }
 }
 
 .layer-2-container .tool-4 {
-  transform: rotate(219deg);
+  transform: rotate(calc(var(--layer2-item-gap) * 4 - 40deg));
 }
 
 .layer-2-container .tool-4 img {
-  transform: rotate(-219deg);
-  animation: tool4RotateAnimation 30s linear infinite;
+  animation: tool4RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes tool5RotateAnimation {
   0% {
-    transform: rotate(89deg);
+    transform: rotate(calc(360deg + 10deg - calc(var(--layer2-item-gap) * 5)));
   }
   100% {
-    transform: rotate(-271deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) * 5 + 10deg));
   }
 }
 
 .layer-2-container .tool-5 {
-  transform: rotate(271deg);
+  transform: rotate(calc(var(--layer2-item-gap) * 5 - 38deg));
 }
 
 .layer-2-container .tool-5 img {
-  transform: rotate(-271deg);
-  animation: tool5RotateAnimation 30s linear infinite;
+  animation: tool5RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes tool6RotateAnimation {
   0% {
-    transform: rotate(37deg);
+    transform: rotate(calc(360deg + 38deg - calc(var(--layer2-item-gap) * 6)));
   }
   100% {
-    transform: rotate(-323deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) * 6 + 38deg));
   }
 }
 
 .layer-2-container .tool-6 {
-  transform: rotate(323deg);
+  transform: rotate(calc(var(--layer2-item-gap) * 6 - 38deg));
 }
 
 .layer-2-container .tool-6 img {
-  transform: rotate(-323deg);
-  animation: tool6RotateAnimation 30s linear infinite;
+  animation: tool6RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes tool7RotateAnimation {
   0% {
-    transform: rotate(345deg);
+    transform: rotate(calc(360deg + 38deg - calc(var(--layer2-item-gap) * 7)));
   }
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(calc(var(--layer2-item-gap-reverse) * 7 + 38deg));
   }
 }
 
 .layer-2-container .tool-7 {
-  transform: rotate(15deg);
+  transform: rotate(calc(var(--layer2-item-gap) * 7 - 38deg));
 }
 
 .layer-2-container .tool-7 img {
-  transform: rotate(-15deg);
-  animation: tool7RotateAnimation 30s linear infinite;
+  animation: tool7RotateAnimation var(--animation-duration) linear infinite;
 }

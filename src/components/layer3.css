@@ -8,22 +8,22 @@
 }
 
 .layer-3-container {
-  width: 650px;
-  height: 650px;
-  max-width: 650px;
+  width: var(--layer3-container-size);
+  height: var(--layer3-container-size);
+  max-width: var(--layer3-container-size);
   background: url(/src/assets/layer3/path.png) 50% 50% no-repeat;
   background-size: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -325px;
-  margin-top: -325px;
-  animation: layer3RotateAnimation 30s linear infinite;
+  margin-left: calc(0px - var(--layer3-container-size) / 2);
+  margin-top: calc(0px - var(--layer3-container-size) / 2);
+  animation: layer3RotateAnimation var(--animation-duration) linear infinite;
 }
 
 .layer-3-container .item {
   width: 0;
-  height: calc(650px / 2 + 5px);
+  height: calc(var(--layer3-container-size) / 2 + 5px);
   display: block;
   position: absolute;
   left: 50%;
@@ -39,121 +39,121 @@
 }
 
 .layer-3-container .item-1 {
-  transform: rotate(45deg);
+  transform: rotate(var(--layer3-item-gap));
 }
 
 .layer-3-container .item-1 img {
-  animation: item1RotateAnimation 30s linear infinite;
+  animation: item1RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item1RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - 45deg));
+    transform: translate(-50%, -50%) rotate(calc(360deg - var(--layer3-item-gap)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(var(--layer3-item-gap-reverse));
   }
 }
 
 .layer-3-container .item-2 {
-  transform: rotate(calc(45deg * 2));
+  transform: rotate(calc(var(--layer3-item-gap) * 2));
 }
 
 .layer-3-container .item-2 img {
-  animation: item2RotateAnimation 30s linear infinite;
+  animation: item2RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item2RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 2)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 2)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 2));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 2));
   }
 }
 
 .layer-3-container .item-3 {
-  transform: rotate(calc(45deg * 3));
+  transform: rotate(calc(var(--layer3-item-gap) * 3));
 }
 
 .layer-3-container .item-3 img {
-  animation: item3RotateAnimation 30s linear infinite;
+  animation: item3RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item3RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 3)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 3)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 3));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 3));
   }
 }
 
 .layer-3-container .item-4 {
-  transform: rotate(calc(45deg * 4));
+  transform: rotate(calc(var(--layer3-item-gap) * 4));
 }
 
 .layer-3-container .item-4 img {
-  animation: item4RotateAnimation 30s linear infinite;
+  animation: item4RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item4RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 4)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 4)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 4));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 4));
   }
 }
 
 .layer-3-container .item-5 {
-  transform: rotate(calc(45deg * 5));
+  transform: rotate(calc(var(--layer3-item-gap) * 5));
 }
 
 .layer-3-container .item-5 img {
-  animation: item5RotateAnimation 30s linear infinite;
+  animation: item5RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item5RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 5)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 5)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 5));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 5));
   }
 }
 
 .layer-3-container .item-6 {
-  transform: rotate(calc(45deg * 6));
+  transform: rotate(calc(var(--layer3-item-gap) * 6));
 }
 
 .layer-3-container .item-6 img {
-  animation: item6RotateAnimation 30s linear infinite;
+  animation: item6RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item6RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 6)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 6)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 6));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 6));
   }
 }
 
 .layer-3-container .item-7 {
-  transform: rotate(calc(45deg * 7));
+  transform: rotate(calc(var(--layer3-item-gap) * 7));
 }
 
 .layer-3-container .item-7 img {
-  animation: item7RotateAnimation 30s linear infinite;
+  animation: item7RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item7RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 7)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 7)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 7));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 7));
   }
 }
 
@@ -162,14 +162,14 @@
 }
 
 .layer-3-container .item-8 img {
-  animation: item8RotateAnimation 30s linear infinite;
+  animation: item8RotateAnimation var(--animation-duration) linear infinite;
 }
 
 @keyframes item8RotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(calc(360deg - calc(45deg * 8)));
+    transform: translate(-50%, -50%) rotate(calc(360deg - calc(var(--layer3-item-gap) * 8)));
   }
   100% {
-    transform: translate(-50%, -50%) rotate(calc(-45deg * 8));
+    transform: translate(-50%, -50%) rotate(calc(var(--layer3-item-gap-reverse) * 8));
   }
 }
