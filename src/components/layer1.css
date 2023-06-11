@@ -37,7 +37,7 @@
   height: 217px;
   opacity: 1;
   outline-offset: 0px;
-  background: url(/src/assets/layer1/path.svg) no-repeat;
+  background: url(/assets/layer1/path.svg) no-repeat;
   background-size: cover;
   background-clip: border-box;
   border: 1px #000;

@@ -34,7 +34,7 @@
   width: inherit;
   height: inherit;
   animation: layer2RotateAnimation var(--animation-duration) linear infinite;
-  background: url(/src/assets/layer2/path.svg) 50%;
+  background: url(/assets/layer2/path.svg) 50%;
   background-size: cover;
 }
 

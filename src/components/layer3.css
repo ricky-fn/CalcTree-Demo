@@ -34,7 +34,7 @@
 .layer-3-content {
   width: inherit;
   height: inherit;
-  background: url(/src/assets/layer3/path.png) 50% 50% no-repeat;
+  background: url(/assets/layer3/path.png) 50% 50% no-repeat;
   background-size: 100%;
   animation: layer3RotateAnimation var(--animation-duration) linear infinite;
 }
