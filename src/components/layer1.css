@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%);
 }
 
-@keyframes rotateAnimation {
+@keyframes layer1RotateAnimation {
   0% {
     transform: rotate(0deg);
   }
@@ -23,7 +23,7 @@
   }
 }
 
-.rolls-royce {
+.layer-1-container .rolls-royce {
   width: 217px;
   height: 217px;
   opacity: 1;
@@ -38,19 +38,19 @@
   align-items: center;
   display: block;
   position: absolute;
-  animation: rotateAnimation 30s linear infinite;
+  animation: layer1RotateAnimation 30s linear infinite;
 }
 
-.avatar {
+.layer-1-container .avatar {
   width: 56px;
-  height: calc(217px / 2 + 20px);
+  height: calc(217px / 2 + 25px);
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0%;
   display: block;
   position: absolute;
   left: 50%;
+  bottom: 50%;
   margin-left: -28px;
-  margin-top: -28px;
   transform-origin: center bottom;
 }
 
@@ -63,11 +63,11 @@
   }
 }
 
-.avatar-1 {
+.layer-1-container .avatar-1 {
   transform: rotate(72deg);
 }
 
-.avatar-1 img {
+.layer-1-container .avatar-1 img {
   transform: rotate(-72deg);
   animation: avatar1RotateAnimation 30s linear infinite;
 }
@@ -81,11 +81,11 @@
   }
 }
 
-.avatar-2 {
+.layer-1-container .avatar-2 {
   transform: rotate(144deg);
 }
 
-.avatar-2 img {
+.layer-1-container .avatar-2 img {
   transform: rotate(-144deg); 
   animation: avatar2RotateAnimation 30s linear infinite;
 }
@@ -99,11 +99,11 @@
   }
 }
 
-.avatar-3 {
+.layer-1-container .avatar-3 {
   transform: rotate(216deg);
 }
 
-.avatar-3 img {
+.layer-1-container .avatar-3 img {
   transform: rotate(-216deg); 
   animation: avatar3RotateAnimation 30s linear infinite;
 }
@@ -117,11 +117,11 @@
   }
 }
 
-.avatar-4 {
+.layer-1-container .avatar-4 {
   transform: rotate(288deg);
 }
 
-.avatar-4 img {
+.layer-1-container .avatar-4 img {
   transform: rotate(-288deg); 
   animation: avatar4RotateAnimation 30s linear infinite;
 }
@@ -136,15 +136,15 @@
   }
 }
 
-.avatar-5 {
+.layer-1-container .avatar-5 {
   transform: rotate(0);
 }
 
-.avatar-5 img {
+.layer-1-container .avatar-5 img {
   animation: avatar5RotateAnimation 30s linear infinite;
 }
 
-.logo {
+.layer-1-container .logo {
   justify-content: center;
   align-items: center;
   display: flex;

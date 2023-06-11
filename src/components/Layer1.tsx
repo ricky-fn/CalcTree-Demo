@@ -2,32 +2,30 @@ import './layer1.css'
 
 function Layer1() {
   return (
-    <>
-      <div className="div-block">
-        <div className="layer-1-container">
-          <div className="rolls-royce">
-            <div className="avatar avatar-1">
-              <img src="/src/assets/layer1/avatar1.png" />
-            </div>
-            <div className="avatar avatar-2">
-              <img src="/src/assets/layer1/avatar2.png" />
-            </div>
-            <div className="avatar avatar-3">
-              <img src="/src/assets/layer1/avatar3.svg" />
-            </div>
-            <div className="avatar avatar-4">
-              <img src="/src/assets/layer1/avatar4.png" />
-            </div>
-            <div className="avatar avatar-5">
-              <img src="/src/assets/layer1/avatar5.png" />
-            </div>
-            <div className="logo">
-              <img src="/src/assets/layer1/logo.svg" />
-            </div>
+    <div className="div-block">
+      <div className="layer-1-container">
+        <div className="rolls-royce">
+          <div className="avatar avatar-1">
+            <img src="/src/assets/layer1/avatar1.png" />
+          </div>
+          <div className="avatar avatar-2">
+            <img src="/src/assets/layer1/avatar2.png" />
+          </div>
+          <div className="avatar avatar-3">
+            <img src="/src/assets/layer1/avatar3.svg" />
+          </div>
+          <div className="avatar avatar-4">
+            <img src="/src/assets/layer1/avatar4.png" />
+          </div>
+          <div className="avatar avatar-5">
+            <img src="/src/assets/layer1/avatar5.png" />
+          </div>
+          <div className="logo">
+            <img src="/src/assets/layer1/logo.svg" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
