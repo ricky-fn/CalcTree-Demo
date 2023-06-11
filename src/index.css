@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  animation-duration: 10seconds;
+}
+
 .div-block {
   height: 670px;
   justify-content: flex-start;
