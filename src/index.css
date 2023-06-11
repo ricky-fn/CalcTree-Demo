@@ -4,6 +4,7 @@
 
 :root {
   --animation-duration: 20s;
+  --zoom-duration: 0.5s;
   --layer3-item-gap: calc(360deg / 8);
   --layer3-item-gap-reverse: calc(-360deg / 8);
   --layer3-container-size: 650px;
@@ -14,6 +15,7 @@
   --layer1-item-gap: calc(360deg / 5);
   --layer1-item-gap-reverse: calc(-360deg / 5);
   --layer1-container-size: 360px;
+  --layer1-z-index: 10;
 }
 
 .div-block {

@@ -1,3 +1,25 @@
+@keyframes layer2ZoomAnimation {
+  0% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+.layer-2-container {
+  width: var(--layer2-container-size);
+  height: var(--layer2-container-size);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(0px - var(--layer2-container-size) / 2);
+  margin-top: calc(0px - var(--layer2-container-size) / 2);
+  animation: layer2ZoomAnimation var(--zoom-duration) ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+  animation-delay: var(--zoom-duration);
+}
 
 @keyframes layer2RotateAnimation {
   0% {
@@ -8,18 +30,12 @@
   }
 }
 
-.layer-2-container {
-  width: var(--layer2-container-size);
-  height: var(--layer2-container-size);
-  opacity: 1;
+.layer-2-container .layer-2-content {
+  width: inherit;
+  height: inherit;
+  animation: layer2RotateAnimation var(--animation-duration) linear infinite;
   background: url(/src/assets/layer2/path.svg) 50%;
   background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: calc(0px - var(--layer2-container-size) / 2);
-  margin-top: calc(0px - var(--layer2-container-size) / 2);
-  animation: layer2RotateAnimation var(--animation-duration) linear infinite;
 }
 
 .layer-2-container .tool {

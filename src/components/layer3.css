@@ -1,3 +1,27 @@
+@keyframes layer3ZoomAnimation {
+  0% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+.layer-3-container {
+  width: var(--layer3-container-size);
+  height: var(--layer3-container-size);
+  max-width: var(--layer3-container-size);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: calc(0px - var(--layer3-container-size) / 2);
+  margin-top: calc(0px - var(--layer3-container-size) / 2);
+  animation: layer2ZoomAnimation var(--zoom-duration) ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+  animation-delay: calc(var(--zoom-duration) * 2);
+}
+
 @keyframes layer3RotateAnimation {
   0% {
     transform: rotate(0deg);
@@ -7,17 +31,11 @@
   }
 }
 
-.layer-3-container {
-  width: var(--layer3-container-size);
-  height: var(--layer3-container-size);
-  max-width: var(--layer3-container-size);
+.layer-3-content {
+  width: inherit;
+  height: inherit;
   background: url(/src/assets/layer3/path.png) 50% 50% no-repeat;
   background-size: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: calc(0px - var(--layer3-container-size) / 2);
-  margin-top: calc(0px - var(--layer3-container-size) / 2);
   animation: layer3RotateAnimation var(--animation-duration) linear infinite;
 }
 

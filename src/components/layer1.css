@@ -9,7 +9,18 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  animation: layer1ZoomAnimation var(--zoom-duration) ease-in-out;
   transform: translate(-50%, -50%);
+  z-index: var(--layer1-z-index);
+}
+
+@keyframes layer1ZoomAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @keyframes layer1RotateAnimation {
