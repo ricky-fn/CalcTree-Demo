@@ -1,0 +1,157 @@
+.layer-1-container {
+  width: 360px;
+  height: 360px;
+  max-height: 340px;
+  max-width: 340px;
+  background-color: #0c111b;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rolls-royce {
+  width: 217px;
+  height: 217px;
+  opacity: 1;
+  outline-offset: 0px;
+  background: url(/src/assets/layer1/path.svg) no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  border: 1px #000;
+  border-radius: 100%;
+  outline: 3px #333;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: absolute;
+  animation: rotateAnimation 30s linear infinite;
+}
+
+.avatar {
+  width: 56px;
+  height: calc(217px / 2 + 20px);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -28px;
+  margin-top: -28px;
+  transform-origin: center bottom;
+}
+
+@keyframes avatar1RotateAnimation {
+  0% {
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: rotate(-72deg);
+  }
+}
+
+.avatar-1 {
+  transform: rotate(72deg);
+}
+
+.avatar-1 img {
+  transform: rotate(-72deg);
+  animation: avatar1RotateAnimation 30s linear infinite;
+}
+
+@keyframes avatar2RotateAnimation {
+  0% {
+    transform: rotate(216deg);
+  }
+  100% {
+    transform: rotate(-144deg);
+  }
+}
+
+.avatar-2 {
+  transform: rotate(144deg);
+}
+
+.avatar-2 img {
+  transform: rotate(-144deg); 
+  animation: avatar2RotateAnimation 30s linear infinite;
+}
+
+@keyframes avatar3RotateAnimation {
+  0% {
+    transform: rotate(144deg);
+  }
+  100% {
+    transform: rotate(-216deg);
+  }
+}
+
+.avatar-3 {
+  transform: rotate(216deg);
+}
+
+.avatar-3 img {
+  transform: rotate(-216deg); 
+  animation: avatar3RotateAnimation 30s linear infinite;
+}
+
+@keyframes avatar4RotateAnimation {
+  0% {
+    transform: rotate(72deg);
+  }
+  100% {
+    transform: rotate(-288deg);
+  }
+}
+
+.avatar-4 {
+  transform: rotate(288deg);
+}
+
+.avatar-4 img {
+  transform: rotate(-288deg); 
+  animation: avatar4RotateAnimation 30s linear infinite;
+}
+
+
+@keyframes avatar5RotateAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.avatar-5 {
+  transform: rotate(0);
+}
+
+.avatar-5 img {
+  animation: avatar5RotateAnimation 30s linear infinite;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  animation: avatar5RotateAnimation 30s linear infinite;
+}
