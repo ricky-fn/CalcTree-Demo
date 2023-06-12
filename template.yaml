@@ -51,7 +51,9 @@ Resources:
         Statement:
           -
             Effect: Allow
-            Action: 's3:GetObject'
+            Action: 
+              - 's3:GetObject'
+              - 's3:DeleteObject'
             Resource:
               - !Sub "arn:aws:s3:::${S3Bucket}/*"
             Principal:
