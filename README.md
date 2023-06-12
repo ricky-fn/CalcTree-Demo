@@ -80,7 +80,7 @@ This command will guide you through the deployment process. Once the deployment 
             ],
             "Resource": [
                 "arn:aws:cloudfront::<AWS_ACCOUNT_ID>:distribution/<CLOUDFRONT_ARN>",  // Replace <AWS_ACCOUNT_ID> with your AWS account ID and <CLOUDFRONT_ARN> with your CloudFront distribution ARN
-                arn:aws:s3:::<S3_BUCKET_NAME>, // Replace <S3_BUCKET_NAME> with your S3 bucket name.
+                "arn:aws:s3:::<S3_BUCKET_NAME>", // Replace <S3_BUCKET_NAME> with your S3 bucket name.
                 "arn:aws:s3:::<S3_BUCKET_NAME>/*"
             ]
         }
