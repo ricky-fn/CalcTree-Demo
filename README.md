@@ -4,7 +4,7 @@ This project is a clone of the dynamic UI from the "That’s why we built CalcTr
 
 ## Demo
 
-Check out the live demo of the project [here](https://d2wjbcto3l3qqp.cloudfront.net/).
+Check out the live demo of the project [here](https://ricky-fn.github.io/CalcTree-Demo/).
 
 ## Tech Stack
 
